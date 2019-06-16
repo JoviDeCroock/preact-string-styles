@@ -1,0 +1,65 @@
+{
+  "name": "preact-string-styles",
+  "amdName": "preactStringStyles",
+  "version": "0.0.1",
+  "private": false,
+  "description": "Patches string styles for preact X.",
+  "main": "dist/preact-string-styles.js",
+  "module": "dist/preact-string-styles.module.js",
+  "umd:main": "dist/preact-string-styles.umd.js",
+  "source": "src/index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "microbundle src/index.js"
+  },
+  "eslintConfig": {
+    "extends": "developit",
+    "settings": {
+      "react": {
+        "pragma": "createElement"
+      }
+    },
+    "rules": {
+      "camelcase": [
+        1,
+        {
+          "allow": [
+            "__test__*",
+            "unstable_*",
+            "UNSAFE_*"
+          ]
+        }
+      ],
+      "prefer-rest-params": 0,
+      "prefer-spread": 0,
+      "no-cond-assign": 0,
+      "react/jsx-no-bind": 0,
+      "react/prefer-stateless-function": 0,
+      "react/sort-comp": 0,
+      "jest/valid-expect": 0,
+      "jest/no-disabled-tests": 0,
+      "react/no-find-dom-node": 0
+    }
+  },
+  "authors": [
+    "Jovi De Croock <decroockjovi@gmail.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jovidecroock/preact-string-styles.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jovidecroock/preact-string-styles/issues"
+  },
+  "homepage": "https://github.com/jovidecroock/preact-string-styles",
+  "devDependencies": {
+    "eslint": "5.15.1",
+    "eslint-config-developit": "^1.1.1",
+    "eslint-plugin-react": "7.12.4",
+    "microbundle": "^0.11.0",
+    "preact": "10.0.0-beta.2"
+  },
+  "peerDependencies": {
+    "preact": "^10.0.0"
+  }
+}
