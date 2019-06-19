@@ -9,6 +9,8 @@
   "umd:main": "dist/preact-string-styles.umd.js",
   "source": "src/index.js",
   "license": "MIT",
+  "typings": "index.d.ts",
+  "types": "index.d.ts",
   "scripts": {
     "build": "microbundle src/index.js"
   },
